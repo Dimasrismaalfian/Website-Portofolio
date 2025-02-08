@@ -1,0 +1,214 @@
+body {
+    font-family: sans-serif;
+    background-color: #202020;
+    color: white;
+    margin: 0px;
+    margin-top: 10px;
+}
+.wrapper {
+    text-align: center;
+}
+.wrapper h1 {
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.wrapper p {
+    margin: 0;
+    color: grey;
+}
+.wrapper a {
+    color: gray;
+}
+.profile {
+    border-radius: 90%;
+    width: 80px;
+    height: 95px;
+}
+.bio {
+    margin-top: 25px;
+}
+.bio span {
+    color: rgb(0, 154, 250);
+}
+.experience {
+    background-color: rgba(128, 128, 128, 0.098);
+}
+.experience h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: orange;
+}
+.experience-list {
+    padding: 0;
+}
+.wrapper-listitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.wrapper-listitem img {
+    height: 60px;
+    width: 60px;
+}
+.wrapper-listitem-name {
+    display: flex;
+    align-items: center;
+}
+.wrapper-listitem-name div {
+    margin-left: 40px;
+}
+.containertools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, lfr));
+    gap: 4px;
+    width: 100%;
+}
+.containertools h2 {
+    color: orange;
+    text-align: center;
+}
+.tools {
+    height: 60px;
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.containertools img {
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+}
+.skill {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 4px;
+    width: 100%;
+    justify-content: center;
+}
+
+.skil {
+    display: contents;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill2 {
+    width: 100%; /* Make it responsive */
+    max-width: 400px; /* Set a max width */
+    height: auto; /* Allow height to adjust */
+    background-color: white;
+    border-radius: 10%;
+    color: black;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+}
+.skill2 :hover {
+  color: orange;  
+}
+
+.skill2 img {
+    align-items: center;
+    display: flex;
+    height: auto; /* Allow height to adjust */
+    width: 150px; /* Make image responsive */
+    height: 150px;
+    max-width: 150px; /* Set a max width */
+    margin: auto;
+}
+
+.skill2 b {
+    margin: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill2 p {
+    margin: 15px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .skill {
+        gap: 2px; /* Adjust gap for smaller screens */
+    }
+
+    .skill2 {
+        width: 100%; /* Full width on smaller screens */
+        max-width: none; /* Remove max width */
+    }
+
+    .skill2 img {
+        max-width: 100px; /* Smaller image on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill2 {
+        margin: 5px; /* Reduce margin on very small screens */
+    }
+
+    .skill2 img {
+        max-width: 80px; /* Even smaller image on very small screens */
+    }
+}
+.serti {
+    background-color: rgba(128, 128, 128, 0.098);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+.serti h2 {
+    text-align: center;
+    color: orange;
+}
+.serti1 {
+    height: 60px;
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.serti1 ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.serti1 img {
+    width: 25%;
+    height: 25%;
+    margin: 0px;
+    border: 5px solid black; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+.footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: white; /* Warna teks */
+    padding: 20px; /* Padding di dalam footer */
+    text-align: center; /* Pusatkan teks */
+}
+
+.footer-content {
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    justify-content: center; /* Pusatkan konten */
+    gap: 20px; /* Jarak antar ikon */
+}
+
+.footer-icon {
+    color: white; /* Warna ikon */
+    font-size: 24px; /* Ukuran ikon */
+    text-decoration: none; /* Hapus garis bawah */
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.footer-icon:hover {
+    color: #1e90ff; /* Warna saat hover */
+}
